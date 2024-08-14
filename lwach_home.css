@@ -10,9 +10,9 @@
     background-image: url('bg.png'); /* Replace with your background image URL */
     background-size: cover;
     /*background-position: center -40%;*/
-    background-color: var(--tg-theme-bg-color);
     height: 100vh;
     display: flex;
+    background-color: var(--tg-theme-bg-color);
     justify-content: center;
     align-items: center;
     position: relative;
@@ -23,7 +23,7 @@ h1 {
     margin-top: 55px;
     margin-bottom: 10px;
     font-size: 15px;
-    font-weight: bold;
+    font-weight: 550;
     color: var(--tg-theme-text-color);
 }
 
@@ -53,10 +53,10 @@ h1 {
     text-decoration: none;
     padding: 10px 20px;
     margin: 0 10px;
-    border-radius: 5px;
+    border-radius: 15px;
     color: white;
     font-family: 'Montserrat', cursive;
-    font-weight: bold;
+    font-weight: 300;
     transition: background-color 0.3s ease;
     width: 100%;
 }
