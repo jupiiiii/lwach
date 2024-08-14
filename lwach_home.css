@@ -19,7 +19,7 @@
 }
 
 h1 {
-    font-family: 'Montserrat', cursive;
+    font-family: 'Montserrat', sans-serif;
     margin-top: 55px;
     margin-bottom: 10px;
     font-size: 15px;
@@ -55,14 +55,14 @@ h1 {
     margin: 0 10px;
     border-radius: 15px;
     color: white;
-    font-family: 'Montserrat', cursive;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     transition: background-color 0.3s ease;
     width: 100%;
 }
 
 .signup {
-    background-color: #3e7fa2;
+    background-color: #387698;
 }
 
 .login {

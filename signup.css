@@ -21,12 +21,12 @@
 .signup-container h1 {
     margin-bottom: 20px;
     color: var(--tg-theme-text-color);
-    font-family: 'Montserrat', cursive;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Form labels */
 .signup-container label {
-    font-family: 'Montserrat', cursive;
+    font-family: 'Montserrat', sans-serif;
     display: block;
     text-align: left;
     font-size: 14px;
@@ -46,7 +46,7 @@
     border: 1px solid #ccc;
     color: var(--tg-theme-text-color);
     font-size: 14px;
-    font-family: 'Montserrat', cursive;
+    font-family: 'Montserrat', sans-serif;
     transition: border-color 0.3s ease;
 }
 
@@ -66,7 +66,7 @@
     color: #f5f5f5;
     font-size: 14px;
     font-weight: 400;
-    font-family: 'Montserrat', cursive;
+    font-family: 'Montserrat', sans-serif;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -79,7 +79,7 @@
 /* Back to Home link */
 .signup-container a {
     display: inline-block;
-    font-family: 'Montserrat', cursive;
+    font-family: 'Montserrat', sans-serif;
     margin-top: 15px;
     color: var(--tg-theme-text-color);
     text-decoration: none;
