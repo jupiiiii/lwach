@@ -19,7 +19,7 @@
 }
 
 h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Light', sans-serif;
     margin-top: 55px;
     margin-bottom: 10px;
     font-size: 15px;
@@ -55,7 +55,7 @@ h1 {
     margin: 0 10px;
     border-radius: 15px;
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Light', sans-serif;
     font-weight: 300;
     transition: background-color 0.3s ease;
     width: 100%;
