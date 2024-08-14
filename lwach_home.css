@@ -10,6 +10,7 @@
     background-image: url('bg.png'); /* Replace with your background image URL */
     background-size: cover;
     /*background-position: center -40%;*/
+    background-color: var(--tg-theme-bg-color);
     height: 100vh;
     display: flex;
     justify-content: center;
