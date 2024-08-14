@@ -6,7 +6,7 @@ signupForm.addEventListener('submit', async (e) => {
     const password = document.getElementById('password').value;
 
     try {
-        const response = await fetch('https://<your-heroku-app>.herokuapp.com/signup', {
+        const response = await fetch('https://lwach-7ba065977414.herokuapp.com/signup', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
