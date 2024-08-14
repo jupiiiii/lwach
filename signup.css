@@ -10,7 +10,7 @@
 .signup-container {
     background-color: var(--tg-theme-bg-color);
     width: 100%;
-    max-width: 400px;
+    max-width: 350px;
     margin: 50px auto;
     padding: 30px;
     border-radius: 8px;
