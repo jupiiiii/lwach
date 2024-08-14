@@ -1,0 +1,94 @@
+/* Basic CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container for the signup form */
+.signup-container {
+    background-color: #f5f5f5;
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Heading */
+.signup-container h1 {
+    margin-bottom: 20px;
+    color: var(--tg-theme-text-color);
+    font-family: 'Montserrat', cursive;
+}
+
+/* Form labels */
+.signup-container label {
+    font-family: 'Montserrat', cursive;
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: 300;
+    color: var(--tg-theme-text-color);
+}
+
+/* Input fields */
+.signup-container input[type="text"],
+.signup-container input[type="email"],
+.signup-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    color: var(--tg-theme-text-color);
+    font-size: 14px;
+    font-family: 'Montserrat', cursive;
+    transition: border-color 0.3s ease;
+}
+
+.signup-container input[type="text"]:focus,
+.signup-container input[type="email"]:focus,
+.signup-container input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Submit button */
+.signup-container button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #387698;
+    color: var(--tg-theme-text-color);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Montserrat', cursive;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-container button:hover {
+    background-color: #1d4e69;
+}
+
+/* Back to Home link */
+.signup-container a {
+    display: inline-block;
+    font-family: 'Montserrat', cursive;
+    margin-top: 15px;
+    color: var(--tg-theme-text-color);
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.signup-container a:hover {
+    color: #0056b3;
+}
+
+
