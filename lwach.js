@@ -46,9 +46,9 @@ loginForm.addEventListener('submit', async (e) => {
         });
 
         const result = await response.json();
-        if (response.ok) {
-            alert(result.message);
-            // Optionally, redirect to another page or perform other actions
+        if (result.token) {
+            // Store the token and use it for authenticated requests
+            alert('Login successful!');
         } else {
             alert(result.message);
         }
