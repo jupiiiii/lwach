@@ -1,5 +1,5 @@
 const signupForm = document.getElementById('signup_form');
-const loginForm = document.getElementById('login_form');
+let tg = window.Telegram.WebApp;
 
 signupForm.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -7,52 +7,29 @@ signupForm.addEventListener('submit', async (e) => {
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
 
-    try {
-        const response = await fetch('https://lwach-7ba065977414.herokuapp.com/signup', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ username, email, password }),
+                if (username.length < 3) {
+                    document.getElementById('error').innerText = 'Username should be at least 3 characters!';
+                    return;
+                }
 
-        });
+                if (email.length < 5) {
+                    document.getElementById('error').innerText = 'Please enter your correct email!';
+                    return;
+                }
 
-        const result = await response.json();
-        if (response.ok) {
-            alert(result.message);
-            // Optionally, redirect to another page or perform other actions
-        } else {
-            alert(result.message);
-        }
-    } catch (error) {
-        alert('Error during sign up: ' + error.message);
-    }
+                if (password.length < 5) {
+                    document.getElementById('error').innerText = 'Password cannot be less than 5 characters!';
+                    return;
+                }
+
+
+                let userData = {
+                    username: username,
+                    email: email,
+                    password: password
+                }
+                tg.sendData(JSON.stringify(complaint));
+                tg.close();
+                
 });
 
-loginForm.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const username = document.getElementById('username').value;
-    // const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-
-    try {
-        const response = await fetch('https://lwach-7ba065977414.herokuapp.com/login', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ username, password }),
-
-        });
-
-        const result = await response.json();
-        if (result.token) {
-            // Store the token and use it for authenticated requests
-            alert('Login successful!');
-        } else {
-            alert(result.message);
-        }
-    } catch (error) {
-        alert('Error during login: ' + error.message);
-    }
-});
